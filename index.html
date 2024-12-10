@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tambahkan Bootstrap CSS dari CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>My Portfolio</title>
+  <style>
+     .profile-img {
+      width: 100%;
+      max-width: 300px;
+      /* border-radius: 50%; */
+      object-fit: cover;
+    }
+
+    .intro-text h1 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    .intro-text p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .profile-img {
+        max-width: 200px;
+      }
+
+      .intro-text h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .card {
+      background-color: #f8f9fa;
+      border-radius: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar dengan menggunakan Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">Haikal Portofolio</a>
+      <!-- Tombol Hamburger untuk tampilan responsif -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menu Navigasi -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#tentang">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projek">Projek</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sertifikat">sertifikat</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bagian Home dengan Card -->
+  <div class="container-fluid vh-100 d-flex justify-content-center align-items-center">
+    <div class="card shadow-lg p-4" style="max-width: 1200px; width: 100%;" id="tentang">
+      <div class="row gx-5 align-items-center">
+        <!-- Bagian Kiri - Foto Profil -->
+        <div class="col-md-5 text-center mb-4 mb-md-0 d-flex justify-content-center align-items-center">
+          <img src="asset/haikal.jpg" alt="Foto Profil" class="profile-img">
+        </div>
+        <!-- Bagian Kanan - Teks Sambutan -->
+        <div class="col-md-7 intro-text text-center text-md-start d-flex justify-content-center align-items-center">
+          <div>
+            <h1>Selamat Datang di Portofolio Saya</h1>
+            <p>
+              Halo! Perkenalkan, nama saya Muhammad Haikal. Saya adalah seorang murid di SMK Wikrama Bogor. Saya tertarik dengan dunia pemrograman, dan ini adalah bagian dari portofolio saya.
+            </p>
+            <p>
+              Di sini, Anda bisa melihat berbagai projek yang saya buat selama disekolah. Jika Anda memiliki pertanyaan atau ingin berbicara dengan saya, silakan hubungi saya melalui kontak yang tersedia di bagian bawah. Terima kasih telah berkunjung ke portofolio saya.
+            </p>
+            <div class="d-flex gap-4">
+                <!-- GitHub -->
+                <a href="https://github.com/username" target="_blank" class="text-dark" style="font-size: 2rem;">
+                  <i class="fab fa-github"></i>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/username" target="_blank" class="text-primary" style="font-size: 2rem;">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <!-- Twitter -->
+                <a href="https://twitter.com/username" target="_blank" class="text-info" style="font-size: 2rem;">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="https://instagram.com/username" target="_blank" class="text-danger" style="font-size: 2rem;">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- Project -->
+  <div class="container my-5" id="projek">
+    <!-- Bagian Header Proyek -->
+    <div class="text-center mb-5">
+      <h2 class="mb-3">Projek Saya</h2>
+      <p class="text-muted">Berikut adalah beberapa projek yang telah saya kerjakan di SMK Wikrama Bogor.</p>
+    </div>
+    
+    <!-- Bagian Grid Proyek -->
+    <div class="row gx-4 gy-4">
+      <!-- Contoh Proyek 1 -->
+      <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+        <div class="card" style="width: 100%;">
+          <img src="asset/Toko.png" class="card-img-top" alt="Proyek 1">
+          <div class="card-body">
+            <h5 class="card-title">Web Kasir Sederhana</h5>
+            <p class="card-text">Sistem kasir sederhana menggunakan PHP</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Contoh Proyek 2 -->
+      <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+        <div class="card" style="width: 100%;">
+          <img src="asset/Data_siswa.png" class="card-img-top" alt="Proyek 2">
+          <div class="card-body">
+            <h5 class="card-title">Data Siswa</h5>
+            <p class="card-text">Membuat CRUD sederhana menggunakan PHP</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Contoh Proyek 3 -->
+      <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+        <div class="card" style="width: 100%;">
+          <img src="asset/IMT.png" class="card-img-top" alt="Proyek 3">
+          <div class="card-body">
+            <h5 class="card-title">Web Menghitung IMT</h5>
+            <p class="card-text">Membuat web Menghitung IMT(Index Masa Tubuh) dengan PHP</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Contoh Proyek 4 -->
+      <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+        <div class="card" style="width: 100%;">
+          <img src="asset/rental.png" class="card-img-top" alt="Proyek 4">
+          <div class="card-body">
+            <h5 class="card-title">Rental Motor</h5>
+            <p class="card-text">Membuat website rental/peminjaman motor</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- sertifikat -->
+  <div class="container my-5" id="sertifikat">
+    <!-- Bagian Header Sertifikasi -->
+    <div class="text-center mb-5">
+      <h2 class="mb-3">Sertifikasi Saya</h2>
+      <p class="text-muted">Berikut adalah beberapa sertifikasi yang telah saya raih selama perjalanan belajar saya.</p>
+    </div>
+  
+    <!-- Bagian Grid Sertifikasi -->
+    <div class="row gx-4 gy-4">
+      <!-- Sertifikasi 1 -->
+      <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+        <div class="card" style="width: 100%;">
+          <img src="asset/serti_java.png" class="card-img-top" alt="Sertifikasi 1">
+          <div class="card-body">
+            <h5 class="card-title">Memulai Pemrograman Dengan JAVA</h5>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Sertifikasi 2 -->
+      <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+        <div class="card" style="width: 100%;">
+          <img src="asset/serti_solid.png" class="card-img-top" alt="Sertifikasi 2">
+          <div class="card-body">
+            <h5 class="card-title">Belajar Prinsip Pemrograman SOLID</h5>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Sertifikasi 3 -->
+      <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+        <div class="card" style="width: 100%;">
+          <img src="asset/serti_web.png" class="card-img-top" alt="Sertifikasi 3">
+          <div class="card-body">
+            <h5 class="card-title">Belajar Dasar Pemrograman Web</h5>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Sertifikasi 4 -->
+      <div class="col-md-4 col-sm-6 d-flex justify-content-center">
+        <div class="card" style="width: 100%;">
+          <img src="asset/serti_unity.png" class="card-img-top" alt="Sertifikasi 4">
+          <div class="card-body">
+            <h5 class="card-title">Unity Essentials Pathway</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <!-- Tambahkan Bootstrap JS dari CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
